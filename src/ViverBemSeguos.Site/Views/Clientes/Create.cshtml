@@ -1,0 +1,189 @@
+﻿@model ViverBem.Application.ViewModels.ClienteViewModel
+@using ViverBem.Application.ViewModels
+
+@{
+    ViewData["Title"] = "Registrar Novo Cliente";
+}
+
+
+<h1>@ViewData["Title"]</h1>
+
+<link href="~/js/bootstrap-datepicker.min.js" rel="stylesheet" />
+
+<div class="row">
+    <div class="col-sm-12">
+        <section>
+            <form asp-action="Create">
+                <h4>Preencha todos os dados corretamente</h4>
+                <hr />
+
+                <vc:summary />
+
+                <div class="row">
+
+                    <div class="col-sm-6">
+                        <input type="hidden" id="CPFX" value="@(ViewBag.Cpf)" name="CPFX" class="form-control" />
+                        <div class="form-group">
+                            <label asp-for="Nome" class="control-label"></label>
+                            <input asp-for="Nome" class="form-control" />
+                            <span asp-validation-for="Nome" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="CPF" class="control-label"></label>
+                            <input asp-for="CPF" class="form-control" disabled />
+                            <span asp-validation-for="CPF" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="RG" class="control-label"></label>
+                            <input asp-for="RG" class="form-control" />
+                            <span asp-validation-for="RG" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="OrgaoExpedidor" class="control-label"></label>
+                            <input asp-for="OrgaoExpedidor" class="form-control" />
+                            <span asp-validation-for="OrgaoExpedidor" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="DataNasc" class="control-label"></label>
+                            <input asp-for="DataNasc" class="form-control" />
+                            <span asp-validation-for="DataNasc" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Sexo" class="control-label"></label>
+                            @Html.Partial("_Sexos")
+                            <span asp-validation-for="Sexo" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="EstadoCivil" class="control-label"></label>
+                            @Html.Partial("_EstadoCivil")
+                            <span asp-validation-for="EstadoCivil" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Ocupacao" class="control-label"></label>
+                            <select asp-for="Ocupacao" asp-items="@(new SelectList(@ViewBag.ListClientes,"profcod","profdesc"))" class="form-control"></select>
+                            <span asp-validation-for="Ocupacao" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Email" class="control-label"></label>
+                            <input asp-for="Email" class="form-control" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Fone" class="control-label"></label>
+                            <input asp-for="Fone" class="form-control" />
+                            <span asp-validation-for="Fone" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Celular" class="control-label"></label>
+                            <input asp-for="Celular" class="form-control" />
+                            <span asp-validation-for="Celular" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="DataExpedicao" class="control-label"></label>
+                            <input asp-for="DataExpedicao" class="form-control" />
+                            <span asp-validation-for="DataExpedicao" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="PPE" class="control-label"></label>
+                            <select asp-for="PPE" class="form-control">
+                                <options>
+                                    <option value="Sim">Sim</option>
+                                    <option value="nao">Não</option>
+                                </options>
+                            </select>
+                            <span asp-validation-for="PPE" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div id="EnderecoFormu">
+                        <hr />
+                        <h3>Endereco do Cliente</h3>
+                        <div class="form-group">
+                            <label asp-for="Endereco.Logradouro" class="control-label"></label>
+                            <input asp-for="Endereco.Logradouro" class="form-control" />
+                            <span asp-validation-for="Endereco.Logradouro" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Endereco.Numero" class="control-label"></label>
+                            <input asp-for="Endereco.Numero" class="form-control" />
+                            <span asp-validation-for="Endereco.Numero" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Endereco.Complemento" class="control-label"></label>
+                            <input asp-for="Endereco.Complemento" class="form-control" />
+                            <span asp-validation-for="Endereco.Complemento" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Endereco.Bairro" class="control-label"></label>
+                            <input asp-for="Endereco.Bairro" class="form-control" />
+                            <span asp-validation-for="Endereco.Bairro" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Endereco.CEP" class="control-label"></label>
+                            <input asp-for="Endereco.CEP" class="form-control" />
+                            <span asp-validation-for="Endereco.CEP" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Endereco.Cidade" class="control-label"></label>
+                            <input asp-for="Endereco.Cidade" class="form-control" />
+                            <span asp-validation-for="Endereco.Cidade" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Endereco.Estado" class="control-label"></label>
+                            @Html.Partial("_Estados")
+                            <span asp-validation-for="Endereco.Estado" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Registrar" class="btn btn-success" />
+                    <a asp-action="Index" class="btn btn-info">Voltar para a lista</a>
+                </div>
+            </form>
+        </section>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+    <script src="~/js/bootstrap-datepicker.min.js"></script>
+    <script src="~/js/bootstrap-datepicker.pt-BR.min.js"></script>
+    <script src="~/js/bootstrap-datepicker.pt.min.js"></script>
+
+    <script>
+        ValidacoesEvento();
+        AjaxModal();
+    </script>
+    @{
+        if (ViewBag.RetornoPost != null)
+        {
+            var notificacao = ViewBag.RetornoPost.ToString().Split(',');
+
+            <script>
+                toastr.options = {
+                    "closebutton": false,
+                    "debug": true,
+                    "newestOnTop": false,
+                    "progressBar": true,
+                    "positionClass": "toast-top-right",
+                    "preventDuplicates": true,
+                    "onclick": null,
+                    "showDuration": "300",
+                    "hideDuration": "1000",
+                    "timeOut": "5000",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
+                }
+                toastr["@notificacao[0]"("@notificacao[1]");
+            </script>
+        }
+    }
+}

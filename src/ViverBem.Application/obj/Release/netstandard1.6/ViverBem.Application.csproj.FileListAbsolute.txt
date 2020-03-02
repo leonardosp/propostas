@@ -1,0 +1,14 @@
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Application\bin\Release\netstandard1.6\ViverBem.Application.deps.json
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Application\bin\Release\netstandard1.6\ViverBem.Application.dll
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Application\bin\Release\netstandard1.6\ViverBem.Application.pdb
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Application\bin\Release\netstandard1.6\ViveBem.Domain.Core.dll
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Application\bin\Release\netstandard1.6\ViverBem.Domain.dll
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Application\bin\Release\netstandard1.6\ViverBem.Domain.pdb
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Application\bin\Release\netstandard1.6\ViveBem.Domain.Core.pdb
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Application\obj\Release\netstandard1.6\ViverBem.Application.csprojAssemblyReference.cache
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Application\obj\Release\netstandard1.6\ViverBem.Application.csproj.CoreCompileInputs.cache
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Application\obj\Release\netstandard1.6\ViverBem.Application.AssemblyInfoInputs.cache
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Application\obj\Release\netstandard1.6\ViverBem.Application.AssemblyInfo.cs
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Application\obj\Release\netstandard1.6\ViverBem.Application.csproj.CopyComplete
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Application\obj\Release\netstandard1.6\ViverBem.Application.dll
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Application\obj\Release\netstandard1.6\ViverBem.Application.pdb

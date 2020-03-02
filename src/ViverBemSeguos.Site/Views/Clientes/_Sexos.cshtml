@@ -1,0 +1,8 @@
+﻿@using ViverBem.Application.ViewModels
+@model ClienteViewModel
+
+@{ 
+    var docs = (IEnumerable<SelectListItem>)new ClienteViewModel().Sexos();
+}
+
+<select asp-for="Sexo" asp-items="@docs" class="form-control"></select>

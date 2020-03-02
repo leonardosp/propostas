@@ -1,0 +1,8 @@
+﻿@using ViverBem.Application.ViewModels
+@model PropostasViewModel
+
+@{ 
+    var contas = (IEnumerable<SelectListItem>)new PropostasViewModel().Contas();
+}
+
+<select asp-for="Banco" asp-items="@contas" class="form-control"></select>

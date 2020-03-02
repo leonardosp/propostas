@@ -1,0 +1,34 @@
+﻿@model ViverBem.Application.ViewModels.ClienteViewModel
+
+<form asp-action="VerificaCpf">
+    <div class="modal-body">
+        <div class="form-horizontal">
+
+            <vc:summary />
+
+            <div class="form-horizontal">
+                <input type="hidden" asp-for="Dependente.ClienteId" />
+                <input type="hidden" asp-for="Id" />
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label asp-for="CPF" class="control-label"></label>
+                            <input asp-for="CPF" class="form-control" />
+                            <span asp-validation-for="CPF" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Verificar" class="btn btn-success" />
+                    <a asp-action="Index" class="btn btn-info">Voltar para a lista</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+

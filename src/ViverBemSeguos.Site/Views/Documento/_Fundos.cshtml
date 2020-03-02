@@ -1,0 +1,8 @@
+﻿@using ViverBem.Application.ViewModels
+@model DocumentoConfiguracaoViewModel
+
+@{ 
+    var fundos = (IEnumerable<SelectListItem>)new DocumentoConfiguracaoViewModel().Fundo();
+}
+
+<select asp-for="NoBackGroundColor" asp-items="@fundos" class="form-control"></select>

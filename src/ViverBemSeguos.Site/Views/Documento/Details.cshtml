@@ -1,0 +1,86 @@
+﻿@model ViverBem.Application.ViewModels.DocumentoConfiguracaoViewModel
+
+@{
+    ViewData["Title"] = "Detalhes do Documento";
+}
+
+<div class="jumbotron">
+    <h2>@ViewData["Title"]</h2>
+    <h4>@Model.CdDocumentoConfiguracao</h4>
+</div>
+
+
+<div class="container">
+    <div>
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-2">
+                    <b>Nome do Documento: </b>
+                    @Html.DisplayFor(model => model.CdDocumentoConfiguracao)
+                </div>
+                <div class="col-sm-2">
+                    <b>Numero da ordem: </b>
+                    @Html.DisplayFor(model => model.NrOrdem)
+                </div>
+                <div class="col-sm-2">
+                    <b>Numero da Coluna: </b>
+                    @Html.DisplayFor(model => model.NrColuna)
+                </div>
+            </div>
+        </div>
+
+        <br />
+        <br />
+        <br />
+        <div class="row">
+            <table class="table table-striped table-dark">
+                <thead>
+                    <tr>
+                        <th>Frase</th>
+                        <th>Nr da Coluna</th>
+                        <th>Tamanho da fonte</th>
+                        <th>Tipo da Fonte</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                @foreach (var item in Model.DocumentoConfiguracaoItems)
+                {
+                    <tr>
+                        <td>@item.NoFrase</td>
+                        <td>@item.NrColuna</td>
+                        <td>@item.NrFonteTamanho</td>
+                        <td>@item.NoTipoFonte</td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.NrSeqDocumentoConfiguracao" class="btn btn-danger">Editar Documento</a>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Adicionar Item</button>
+    <a asp-action="Index" class="btn btn-default">Voltar para a listagem</a>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Adicionar Doumento Item</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-12">
+                        @Html.Partial("_DocItem")
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

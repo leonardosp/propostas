@@ -1,0 +1,27 @@
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Filters\bin\Debug\netstandard2.0\ViverBem.Infra.CrossCutting.Filters.deps.json
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Filters\bin\Debug\netstandard2.0\ViverBem.Infra.CrossCutting.Filters.dll
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Filters\bin\Debug\netstandard2.0\ViverBem.Infra.CrossCutting.Filters.pdb
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Filters\bin\Debug\netstandard2.0\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Filters\bin\Debug\netstandard2.0\Microsoft.AspNetCore.Mvc.Abstractions.dll
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Filters\bin\Debug\netstandard2.0\Microsoft.AspNetCore.Mvc.Core.dll
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Filters\bin\Debug\netstandard2.0\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Filters\bin\Debug\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Filters\bin\Debug\netstandard2.0\Microsoft.AspNetCore.Hosting.Abstractions.xml
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Filters\bin\Debug\netstandard2.0\Microsoft.AspNetCore.Mvc.Abstractions.xml
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Filters\bin\Debug\netstandard2.0\Microsoft.AspNetCore.Mvc.Core.xml
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Filters\bin\Debug\netstandard2.0\Microsoft.AspNetCore.Mvc.ViewFeatures.xml
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Filters\bin\Debug\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Filters\obj\Debug\netstandard2.0\ViverBem.Infra.CrossCutting.Filters.csproj.CoreCompileInputs.cache
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Filters\obj\Debug\netstandard2.0\ViverBem.Infra.CrossCutting.Filters.AssemblyInfoInputs.cache
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Filters\obj\Debug\netstandard2.0\ViverBem.Infra.CrossCutting.Filters.AssemblyInfo.cs
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Filters\obj\Debug\netstandard2.0\ViverBem.Infra.CrossCutting.Filters.csproj.CopyComplete
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Filters\obj\Debug\netstandard2.0\ViverBem.Infra.CrossCutting.Filters.dll
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Filters\obj\Debug\netstandard2.0\ViverBem.Infra.CrossCutting.Filters.pdb
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Filters\obj\Debug\netstandard2.0\ViverBem.Infra.CrossCutting.Filters.AssemblyInfoInputs.cache
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Filters\obj\Debug\netstandard2.0\ViverBem.Infra.CrossCutting.Filters.AssemblyInfo.cs
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Filters\obj\Debug\netstandard2.0\ViverBem.Infra.CrossCutting.Filters.dll
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Filters\obj\Debug\netstandard2.0\ViverBem.Infra.CrossCutting.Filters.pdb
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Filters\bin\Debug\netstandard2.0\ViverBem.Infra.CrossCutting.Filters.deps.json
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Filters\bin\Debug\netstandard2.0\ViverBem.Infra.CrossCutting.Filters.dll
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Filters\bin\Debug\netstandard2.0\ViverBem.Infra.CrossCutting.Filters.pdb
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Filters\obj\Debug\netstandard2.0\ViverBem.Infra.CrossCutting.Filters.csprojAssemblyReference.cache

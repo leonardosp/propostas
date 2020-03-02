@@ -1,0 +1,114 @@
+﻿@using ViverBem.Domain.Interfaces
+@inject IUser user
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ViverBemSeguros.Site</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/custom.min.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/bootstrap.css" asp-append-version="true" />
+    </environment>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-info">
+        <div class="container">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-header">
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Viver Bem Seguros</a>
+            </div>
+            <div class="colapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="Clientes">Clientes <span class="carret"></span></a>
+                        <div class="dropdown-menu" aria-labelledby="Clientes">
+                            @if (user.IsAuthenticated() && User.HasClaim(c => c.Value == "Digitador" || c.Value == "Administrador"))
+                            {
+                                <a class="dropdown-item" asp-area="" asp-controller="Clientes" asp-action="Index">Lista Clientes</a>
+                            }
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="Propostas">Propostas<span class="carret"></span></a>
+                        <div class="dropdown-menu" aria-labelledby="Propostas">
+                            @if (user.IsAuthenticated() && User.HasClaim(c => c.Value == "Digitador" || c.Value == "Administrador"))
+                            {
+                                <a class="dropdown-item" asp-area="" asp-controller="Propostas" asp-action="Index">Criar Propostas</a>
+                            }
+                            @if (user.IsAuthenticated() && User.HasClaim(c => c.Value == "Aprovador" || c.Value == "Administrador"))
+                            {
+                                <a class="dropdown-item" asp-area="" asp-controller="Propostas" asp-action="PropostasParaAprovar">Propostas Para Aprovar</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Propostas" asp-action="PropostasAprovadas">Propostas Aprovadas</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Propostas" asp-action="PropostasRecusadas">Propostas Recusadas</a>
+                            }
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="Relatorios">Relatórios<span class="carret"></span></a>
+                        <div class="dropdown-menu" aria-labelledby="Relatorios">
+                            @if (user.IsAuthenticated() && User.HasClaim(c => c.Value == "Aprovador" || c.Value == "Administrador"))
+                            {
+                                <a class="dropdown-item" asp-area="" asp-controller="Propostas" asp-action="Relatorios">Relátorios de Propostas</a>
+                            }
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="Conta">Registrar<span class="carret"></span></a>
+                        <div class="dropdown-menu" aria-labelledby="Relatorios">
+                            @if (user.IsAuthenticated() && User.HasClaim(c => c.Value == "Administrador"))
+                            {
+                                <a class="dropdown-item" asp-area="" asp-controller="Account" asp-action="Register">Cadastrar Usuario</a>
+                            }
+                        </div>
+                    </li> 
+                </ul>
+                <ul class="nav navbar-nav ml-auto">
+                        @await Html.PartialAsync("_LoginPartial")
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; 2019 - Viver Bem Seguros</p>
+        </footer>
+    </div>
+
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+        </script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+    </environment>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

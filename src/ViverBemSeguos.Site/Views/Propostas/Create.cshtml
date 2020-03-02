@@ -1,0 +1,115 @@
+﻿@model ViverBem.Application.ViewModels.PropostasViewModel
+@using ViverBem.Application.ViewModels
+
+@{
+    ViewData["Title"] = "Registrar Nova Proposta";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<link href="~/js/bootstrap-datepicker.min.js" rel="stylesheet" />
+
+<div class="row">
+    <div class="col-sm-12">
+        <section>
+            <form asp-action="Create">
+                <input type="hidden" id="PROPSX" value="@(ViewBag.Sequencia)" name="PROPSX" class="form-control" />
+                <hr />
+                <vc:summary />
+                <div class="form-group">
+                    <label asp-for="Dt_venda" class="control-label"></label>
+                    <input asp-for="Dt_venda" class="form-control" />
+                    <span asp-validation-for="Dt_venda" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Id_ext_props" class="control-label"></label>
+                    <input asp-for="Id_ext_props" value="@(ViewBag.Sequencia)" class="form-control" disabled="disabled" />
+                    <span asp-validation-for="Id_ext_props" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Nome" class="control-label"></label>
+                    <select asp-for="Nome" asp-items="@(new SelectList(@ViewBag.ListCombos,"Id","Nome"))" class="form-control"></select>
+                    <span asp-validation-for="Nome" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Banco" class="control-label"></label>
+                    @Html.Partial("_Contas")
+                    <span asp-validation-for="Banco" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="CodCombo" class="control-label"></label>
+                    <select asp-for="CodCombo" asp-items="@(new SelectList(@ViewBag.ListDados,"Id","CodCombo"))" class="form-control"></select>
+                    <span asp-validation-for="CodCombo" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Agencia" class="control-label"></label>
+                    <input asp-for="Agencia" class="form-control" />
+                    <span asp-validation-for="Agencia" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Agencia_dv" class="control-label"></label>
+                    <input asp-for="Agencia_dv" class="form-control" />
+                    <span asp-validation-for="Agencia_dv" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="CC" class="control-label"></label>
+                    <input asp-for="CC" class="form-control" />
+                    <span asp-validation-for="CC" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Cc_dv" class="control-label"></label>
+                    <input asp-for="Cc_dv" class="form-control" />
+                    <span asp-validation-for="Cc_dv" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Dia_debito" class="control-label"></label>
+                    <input asp-for="Dia_debito" class="form-control" />
+                    <span asp-validation-for="Dia_debito" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Registrar" class="btn btn-success" />
+                    <a asp-action="Index" class="btn btn-info">Voltar para a lista</a>
+                </div>
+            </form>
+        </section>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+    <script src="~/js/bootstrap-datepicker.min.js"></script>
+    <script src="~/js/bootstrap-datepicker.pt-BR.min.js"></script>
+    <script src="~/js/bootstrap-datepicker.pt.min.js"></script>
+
+    @{
+        if (ViewBag.RetornoPost != null)
+        {
+            var notificacao = ViewBag.RetornoPost.ToString().Split(',');
+
+            <script>
+                toastr.options = {
+                    "closebutton": false,
+                    "debug": true,
+                    "newestOnTop": false,
+                    "progressBar": true,
+                    "positionClass": "toast-top-right",
+                    "preventDuplicates": true,
+                    "onclick": null,
+                    "showDuration": "300",
+                    "hideDuration": "1000",
+                    "timeOut": "5000",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
+                }
+                toastr["@notificacao[0]"("@notificacao[1]");
+            </script>
+        }
+    }
+}

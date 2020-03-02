@@ -1,0 +1,53 @@
+﻿@model ViverBem.Application.ViewModels.ComboPrincViewModel
+
+<form asp-action="IncluirCombo">
+    <div class="modal-body">
+        <div class="form-horizontal">
+            <vc:summary />
+
+            <div class="form-horizontal">
+                <input type="hidden" asp-for="Id" />
+
+                <div class="form-group">
+                    <label asp-for="Combos.CodCombo" class="control-label"></label>
+                    <input asp-for="Combos.CodCombo" class="form-control" />
+                    <span asp-validation-for="Combos.CodCombo" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Combos.PlanoSrv" class="control-label"></label>
+                    <input asp-for="Combos.PlanoSrv" class="form-control" />
+                    <span asp-validation-for="Combos.PlanoSrv" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Combos.PlaPrinServ" class="control-label"></label>
+                    <input asp-for="Combos.PlaPrinServ" class="form-control" />
+                    <span asp-validation-for="Combos.PlaPrinServ" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Combos.VlrPremio" class="control-label"></label>
+                    <input asp-for="Combos.VlrPremio" class="form-control" />
+                    <span asp-validation-for="Combos.VlrPremio" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Combos.VlrCapital" class="control-label"></label>
+                    <input asp-for="Combos.VlrCapital" class="form-control" />
+                    <span asp-validation-for="Combos.VlrCapital" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Combos.CodComissUsr" class="control-label"></label>
+                    <input asp-for="Combos.CodComissUsr" class="form-control" />
+                    <span asp-validation-for="Combos.CodComissUsr" class="text-danger"></span>
+                </div>
+                <div class="modal-footer">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Adicionar Combo" class="btn btn-success" />
+                        <input type="submit" class="btn btn-info" value="Fechar" data-dismiss="modal" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+

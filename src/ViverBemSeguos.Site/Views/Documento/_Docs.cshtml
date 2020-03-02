@@ -1,0 +1,8 @@
+﻿@using ViverBem.Application.ViewModels
+@model DocumentoConfiguracaoViewModel
+
+@{ 
+    var docs = (IEnumerable<SelectListItem>)new DocumentoConfiguracaoViewModel().Documentos();
+}
+
+<select asp-for="CdDocumentoConfiguracao" asp-items="@docs" class="form-control"></select>

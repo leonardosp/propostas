@@ -1,0 +1,110 @@
+﻿@model ViverBem.Application.ViewModels.ClienteViewModel
+
+@{
+    ViewData["Title"] = "Detalhes do Cliente";
+}
+
+<div class="jumbotron">
+    <h2>@ViewData["Title"]</h2>
+    <h4>@Model.Nome</h4>
+</div>
+
+
+<div class="container">
+    <div>
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-2">
+                    <b>Nome: </b>
+                    @Html.DisplayFor(model => model.Nome)
+                </div>
+                <div class="col-sm-2">
+                    <b>CPF: </b>
+                    @Html.DisplayFor(model => model.CPF)
+                </div>
+                <div class="col-sm-2">
+                    <b>Data Nascimento: </b><br />
+                    @Model.DataNasc.ToString("d")
+                </div>
+            </div>
+        </div>
+        
+        <hr />
+        <br />
+        <div class="row">
+            <b>Data Nascimento: </b><br />
+            @Model.DataNasc.ToString("d")
+        </div>
+        <br />
+        <div class="row">
+            <b>RG :</b>
+            @Model.RG
+        </div>
+        <br />
+        <div class="row">
+            <b>Orgão Emissor:</b>
+            @Model.OrgaoExpedidor
+            <br />
+            <b>Data Expedição</b>
+            @Model.DataExpedicao.ToString("d")
+        </div>
+        <br />
+        <div class="row">
+            <b>Email:</b>
+            @Model.Email
+        </div>
+        <br />
+        <div class="row">
+            <b>Fone:</b>
+            @Model.Fone
+        </div>
+        <br />
+        <div class="row">
+            <b>Celular:</b>
+            @Model.Fone
+        </div>
+        <br />
+        <div class="row">  
+            <table class="table table-striped table-dark">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Parentesco</th>
+                        <th>Participação</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                @foreach (var item in Model.dependentes)
+                {
+                    <tr>
+                        <td>@item.Nome</td>
+                        <td>@item.Parentesco</td>
+                        <td>@item.Participacao</td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="exampleModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Lembre-se!, Cadastre dependetes para que feche 100% de Participação.</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                @Html.Partial("_Dependente")
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-danger">Editar Cliente</a> 
+    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">Adicionar Dependente</button>
+    <a asp-action="Index" class="btn btn-success">Voltar para a listagem</a>
+</div>

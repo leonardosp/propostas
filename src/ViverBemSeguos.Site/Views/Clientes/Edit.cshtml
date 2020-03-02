@@ -1,0 +1,143 @@
+﻿@model ViverBem.Application.ViewModels.ClienteViewModel
+
+@{
+    ViewData["Title"] = "Edição";
+}
+
+<link href="~/js/bootstrap-datepicker.min.js" rel="stylesheet" />
+
+<h4>Cliente</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" method="post">
+            <vc:summary />
+
+            <input type="hidden" asp-for="Id" />
+            <input type="hidden" asp-for="FuncionarioId" />
+            <div class="form-group">
+                <label asp-for="Nome" class="control-label"></label>
+                <input asp-for="Nome" class="form-control" />
+                <span asp-validation-for="Nome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CPF" class="control-label"></label>
+                <input asp-for="CPF" class="form-control" />
+                <span asp-validation-for="CPF" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RG" class="control-label"></label>
+                <input asp-for="RG" class="form-control" />
+                <span asp-validation-for="RG" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OrgaoExpedidor" class="control-label"></label>
+                <input asp-for="OrgaoExpedidor" class="form-control" />
+                <span asp-validation-for="OrgaoExpedidor" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="DataNasc" class="control-label"></label>
+                <input asp-for="DataNasc" class="form-control" />
+                <span asp-validation-for="DataNasc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sexo" class="control-label"></label>
+                <input asp-for="Sexo" class="form-control" />
+                <span asp-validation-for="Sexo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EstadoCivil" class="control-label"></label>
+                <input asp-for="EstadoCivil" class="form-control" />
+                <span asp-validation-for="EstadoCivil" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Fone" class="control-label"></label>
+                <input asp-for="Fone" class="form-control" />
+                <span asp-validation-for="Fone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Celular" class="control-label"></label>
+                <input asp-for="Celular" class="form-control" />
+                <span asp-validation-for="Celular" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataExpedicao" class="control-label"></label>
+                <input asp-for="DataExpedicao" class="form-control" />
+                <span asp-validation-for="DataExpedicao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PPE" class="control-label"></label>
+                <input asp-for="PPE" class="form-control" />
+                <span asp-validation-for="PPE" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Atualizar Cliente" class="btn btn-success" />
+                    <a asp-action="Index" class="btn btn-info">Voltar para Lista</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="EnderecoForm">
+    <div id="EnderecoTarget">
+        @Html.Partial("_DetalhesEndereco")
+    </div>
+</div>
+
+<div id="myModal" class="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div id="myModalContent"></div>
+        </div>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+        ValidacoesEvento();
+        AjaxModal();
+    </script>
+    <script src="~/js/bootstrap-datepicker.min.js"></script>
+    <script src="~/js/bootstrap-datepicker.pt-BR.min.js"></script>
+    <script src="~/js/bootstrap-datepicker.pt.min.js"></script>
+
+    @{
+        if (ViewBag.RetornoPost != null)
+        {
+            var notificacao = ViewBag.RetornoPost.ToString().Split(',');
+
+            <script>
+                toastr.options = {
+                    "closebutton": false,
+                    "debug": true,
+                    "newestOnTop": false,
+                    "progressBar": true,
+                    "positionClass": "toast-top-right",
+                    "preventDuplicates": true,
+                    "onclick": null,
+                    "showDuration": "300",
+                    "hideDuration": "1000",
+                    "timeOut": "5000",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
+                }
+                toastr["@notificacao[0]"("@notificacao[1]");
+            </script>
+        }
+    }
+}

@@ -1,0 +1,77 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+@media (min-width: 768px) {
+    body > .navbar-transparent {
+        box-shadow: none
+    }
+
+        body > .navbar-transparent .navbar-nav > .open > a {
+            box-shadow: none
+        }
+}
+
+#home, #help {
+    font-size: 0.9rem
+}
+
+    #home .navbar, #help .navbar {
+        background: #349aed;
+        background: linear-gradient(145deg, #349aed 50%, #34d8ed 100%);
+        transition: box-shadow 200ms ease-in
+    }
+
+    #home .navbar-transparent, #help .navbar-transparent {
+        background: none !important;
+        box-shadow: none
+    }
+
+    #home .navbar-brand .nav-link, #help .navbar-brand .nav-link {
+        display: inline-block;
+        margin-right: -30px
+    }
+
+    #home .navbar-brand img, #help .navbar-brand img {
+        display: inline-block;
+        margin: 0 10px;
+        width: 30px
+    }
+
+    #home .nav-link, #help .nav-link {
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #fff
+    }
+

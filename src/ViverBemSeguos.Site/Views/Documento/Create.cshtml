@@ -1,0 +1,117 @@
+﻿@model ViverBem.Application.ViewModels.DocumentoConfiguracaoViewModel
+@using ViverBem.Application.ViewModels
+
+@{
+    ViewData["Title"] = "Registrar Novo Documento";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker3.min.css" rel="stylesheet" />
+
+<div class="row">
+    <div class="col-md-12">
+        <form asp-action="Create">
+            <h4>Preencha todos os dados corretamente</h4>
+            <hr />
+            <vc:summary />
+            <div class="row">
+                <div class="form-group">
+                    <label asp-for="CdDocumentoConfiguracao" class="control-label"></label>
+                    @Html.Partial("_Docs")
+                    <span asp-validation-for="CdDocumentoConfiguracao" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="NoBackGroundColor" class="control-label"></label>
+                    @Html.Partial("_Fundos")
+                    <span asp-validation-for="NoBackGroundColor" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="NoHorizontalAligment" class="control-label"></label>
+                    @Html.Partial("_Alinhamentos")
+                    <span asp-validation-for="NoHorizontalAligment" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="NoPropriedadeLista" class="control-label"></label>
+                    <input asp-for="NoPropriedadeLista" class="form-control" />
+                    <span asp-validation-for="NoPropriedadeLista" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="NrColuna" class="control-label"></label>
+                    <input asp-for="NrColuna" class="form-control" />
+                    <span asp-validation-for="NrColuna" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="NrMarginLeft" class="control-label"></label>
+                    <input asp-for="NrMarginLeft" class="form-control" />
+                    <span asp-validation-for="NrMarginLeft" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="NrOrdem" class="control-label"></label>
+                    <input asp-for="NrOrdem" class="form-control" />
+                    <span asp-validation-for="NrOrdem" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="NrParagraphspacing" class="control-label"></label>
+                    <input asp-for="NrParagraphspacing" class="form-control" />
+                    <span asp-validation-for="NrParagraphspacing" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="NrTamanhoBorda" class="control-label"></label>
+                    <input asp-for="NrTamanhoBorda" class="form-control" />
+                    <span asp-validation-for="NrTamanhoBorda" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="NrWidth" class="control-label"></label>
+                    <input asp-for="NrWidth" class="form-control" />
+                    <span asp-validation-for="NrWidth" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Registrar" class="btn btn-success" />
+                <a asp-action="Index" class="btn btn-info">Voltar para a lista</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/locales/bootstrap-datepicker.pt-BR.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/locales/bootstrap-datepicker.pt.min.js"></script>
+
+    <script>
+        ValidacoesEvento();
+        AjaxModal();
+    </script>
+    @{
+        if (ViewBag.RetornoPost != null)
+        {
+            var notificacao = ViewBag.RetornoPost.ToString().Split(',');
+
+            <script>
+                toastr.options = {
+                    "closebutton": false,
+                    "debug": true,
+                    "newestOnTop": false,
+                    "progressBar": true,
+                    "positionClass": "toast-top-right",
+                    "preventDuplicates": true,
+                    "onclick": null,
+                    "showDuration": "300",
+                    "hideDuration": "1000",
+                    "timeOut": "5000",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
+                }
+                toastr["@notificacao[0]"("@notificacao[1]");
+            </script>
+        }
+    }
+}

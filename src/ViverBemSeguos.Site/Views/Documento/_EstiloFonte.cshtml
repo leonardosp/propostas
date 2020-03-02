@@ -1,0 +1,8 @@
+﻿@using ViverBem.Application.ViewModels
+@model DocumentoConfiguracaoViewModel
+
+@{ 
+    var estiloFonte = (IEnumerable<SelectListItem>)new DocumentoConfiguracaoViewModel().DocumentoConfiguracaoItem.EstiloFonte();
+}
+
+<select asp-for="DocumentoConfiguracaoItem.NoTipoFonte" asp-items="@estiloFonte" class="form-control"></select>

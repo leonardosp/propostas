@@ -1,0 +1,59 @@
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\ViverBemSeguos.Site.deps.json
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\ViverBemSeguos.Site.runtimeconfig.json
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\ViverBemSeguos.Site.runtimeconfig.dev.json
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\ViverBemSeguos.Site.dll
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\ViverBemSeguos.Site.pdb
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\ViveBem.Domain.Core.dll
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\ViverBem.Application.dll
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\ViverBem.Domain.dll
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\ViverBem.Infra.CrossCutting.Bus.dll
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\ViverBem.Infra.CrossCutting.Identity.dll
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\ViverBem.Infra.CrossCutting.IoC.dll
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\ViverBem.Infra.Data.dll
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\ViverBem.Application.pdb
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\ViverBem.Infra.CrossCutting.Bus.pdb
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\ViverBem.Infra.CrossCutting.Identity.pdb
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\ViverBem.Infra.CrossCutting.IoC.pdb
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\ViverBem.Infra.Data.pdb
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\ViveBem.Domain.Core.pdb
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\ViverBem.Domain.pdb
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\obj\Release\netcoreapp2.0\ViverBemSeguos.Site.csprojAssemblyReference.cache
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\obj\Release\netcoreapp2.0\ViverBemSeguos.Site.csproj.CoreCompileInputs.cache
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\obj\Release\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\obj\Release\netcoreapp2.0\ViverBemSeguos.Site.AssemblyInfoInputs.cache
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\obj\Release\netcoreapp2.0\ViverBemSeguos.Site.AssemblyInfo.cs
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\obj\Release\netcoreapp2.0\ViverBemSeguos.Site.csproj.CopyComplete
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\obj\Release\netcoreapp2.0\ViverBemSeguos.Site.dll
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\obj\Release\netcoreapp2.0\ViverBemSeguos.Site.pdb
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\ViverBem.Infra.CrossCutting.Filters.dll
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\ViverBem.Infra.CrossCutting.Filters.pdb
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\appsettings.Development.json
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\appsettings.json
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\bundleconfig.json
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\Properties\launchSettings.json
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\ViverBemSeguos.Site.deps.json
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\ViverBemSeguos.Site.runtimeconfig.json
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\ViverBemSeguos.Site.runtimeconfig.dev.json
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\ViverBemSeguos.Site.dll
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\ViverBemSeguos.Site.pdb
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\ViveBem.Domain.Core.dll
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\ViverBem.Application.dll
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\ViverBem.Domain.dll
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\ViverBem.Infra.CrossCutting.Bus.dll
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\ViverBem.Infra.CrossCutting.Identity.dll
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\ViverBem.Infra.CrossCutting.IoC.dll
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\ViverBem.Infra.Data.dll
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\ViverBem.Application.pdb
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\ViverBem.Infra.CrossCutting.Bus.pdb
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\ViverBem.Infra.CrossCutting.Identity.pdb
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\ViverBem.Infra.CrossCutting.IoC.pdb
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\ViverBem.Infra.Data.pdb
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\ViveBem.Domain.Core.pdb
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\bin\Release\netcoreapp2.0\ViverBem.Domain.pdb
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\obj\Release\netcoreapp2.0\ViverBemSeguos.Site.csprojAssemblyReference.cache
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\obj\Release\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\obj\Release\netcoreapp2.0\ViverBemSeguos.Site.AssemblyInfoInputs.cache
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\obj\Release\netcoreapp2.0\ViverBemSeguos.Site.AssemblyInfo.cs
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\obj\Release\netcoreapp2.0\ViverBemSeguos.Site.csproj.CopyComplete
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\obj\Release\netcoreapp2.0\ViverBemSeguos.Site.dll
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBemSeguos.Site\obj\Release\netcoreapp2.0\ViverBemSeguos.Site.pdb

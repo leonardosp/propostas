@@ -1,0 +1,8 @@
+﻿@using ViverBem.Application.ViewModels
+@model ClienteViewModel
+
+@{ 
+    var civis = (IEnumerable<SelectListItem>)new ClienteViewModel().Civis();
+}
+
+<select asp-for="EstadoCivil" asp-items="@civis" class="form-control"></select>

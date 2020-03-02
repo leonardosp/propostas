@@ -1,0 +1,28 @@
+﻿@model ViverBem.Application.ViewModels.PropostasViewModel
+
+<form asp-action="RecusarPropostas">
+    <div class="modal-body">
+        <div class="form-horizontal">
+            <vc:summary />
+
+            <div class="form-horizontal">
+                <input type="hidden" asp-for="Id" />
+
+                <div class="form-group">
+                    <label asp-for="StatusFinanceiro" class="control-label"></label>
+                    <input asp-for="StatusFinanceiro" class="form-control" />
+                    <span asp-validation-for="StatusFinanceiro" class="text-danger"></span>
+                </div>
+                <div class="modal-footer">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Recusar Proposta" class="btn btn-success" />
+                        <input type="submit" class="btn btn-info" value="Fechar" data-dismiss="modal" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+

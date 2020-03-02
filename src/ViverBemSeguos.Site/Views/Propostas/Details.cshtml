@@ -1,0 +1,82 @@
+﻿@model ViverBem.Application.ViewModels.PropostasViewModel
+
+@{
+    ViewData["Title"] = "Detalhes da Proposta";
+}
+
+<div class="jumbotron">
+    <h2>@ViewData["Title"]</h2>
+    <h4>@Model.Nome</h4>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="col-sm-4">
+                                <b>Nome: </b>
+                                @Html.DisplayFor(model => model.Nome)
+                            </div>
+                            <div class="col-sm-4">
+                                <b>CPF: </b>
+                                @Html.DisplayFor(model => model.CPF)
+                            </div>
+                            <div class="col-sm-4">
+                                <b>Data Nascimento: </b><br />
+                                @Model.Dt_venda.ToString("d")
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="col-sm-4">
+                                <b>Combo :</b>
+                                @Model.CodCombo
+                            </div>
+                            <div class="col-sm-4">
+                                <b>Valor Premio:</b>
+                                @Model.VlrPremio
+                            </div>
+                            <div class="col-sm-4">
+                                <b>Valor Capital</b>
+                                @Model.VlrCapital
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="exampleModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        @Html.Partial("_Dependente")
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br />
+<br />
+<br />
+<div class="col-sm-12">
+    <div class="row">
+        <div>
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">Recusar Proposta</button>
+            <a asp-action="Index" class="btn btn-warning">Voltar para a listagem</a>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,85 @@
+﻿@using ViverBem.Domain.Interfaces
+@inject IUser user
+@model IEnumerable<ViverBem.Application.ViewModels.PropostasViewModel>
+
+@{
+    ViewData["Title"] = "Propostas Para Aprovar";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+
+<br />
+
+<form asp-action="PropostasParaAprovar">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="col-sm-10">
+                <p>Filtrar por CPF: <input type="text" name="SearchString" value="@ViewData["currentFilter"]" /> <input type="submit" value="Filtrar" class="btn btn-info" /> </p>
+            </div>
+        </div>
+    </div>
+</form>
+<td>
+    <a asp-action="EnviarTodasPropostas" class="btn btn-danger"><span class="glyphicon-align-right"></span>Enviar Propostas</a>
+</td>
+<td>
+    <a asp-action="ConsultarPropostas" class="btn btn-primary"><span class="glyphicon-adjust">Consultar Propostas</span></a>
+</td>
+
+<input id="hdnToken" type="hidden" />
+<table class="table">
+    
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CPF)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Dt_venda)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CodCombo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CPF)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    @item.Dt_venda.ToString("d")
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CodCombo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+
+                <td>
+                    @if (user.IsAuthenticated() && User.HasClaim(c => c.Value == "Aprovador") || User.HasClaim(c => c.Value == "Administrador"))
+                    {
+                        <a asp-action="EnviarProposta" asp-route-id="@item.Id" class="btn btn-success"><span class="glyphicon glyphicon-circle-arrow-right"></span> Aprovar</a>
+                    }
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info"><span class="glyphicon glyphicon-search"></span> Ver Detalhes</a>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-info"><span class="glyphicon glyphicon-pencil"></span>Editar Proposta</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

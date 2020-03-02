@@ -1,0 +1,8 @@
+﻿@using ViverBem.Application.ViewModels
+@model DocumentoConfiguracaoViewModel
+
+@{ 
+    var tipofonte = (IEnumerable<SelectListItem>)new DocumentoConfiguracaoViewModel().DocumentoConfiguracaoItem.Fonte();
+}
+
+<select asp-for="DocumentoConfiguracaoItem.NoFonte" asp-items="@tipofonte" class="form-control"></select>

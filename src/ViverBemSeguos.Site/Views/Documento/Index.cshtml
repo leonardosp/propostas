@@ -1,0 +1,46 @@
+﻿@model IEnumerable<ViverBem.Application.ViewModels.DocumentoConfiguracaoViewModel>
+
+@{
+    ViewData["Title"] = "Lista dos Documentos";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+
+<br />
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CdDocumentoConfiguracao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NrColuna)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NrOrdem)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CdDocumentoConfiguracao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NrColuna)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NrOrdem)
+                </td>
+
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.NrSeqDocumentoConfiguracao" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span> Ver Detalhes</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

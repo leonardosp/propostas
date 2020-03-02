@@ -1,0 +1,8 @@
+﻿@using ViverBem.Application.ViewModels
+@model RegisterViewModel
+
+@{ 
+    var docs = (IEnumerable<SelectListItem>)new RegisterViewModel().Claims();
+}
+
+<select asp-for="Hierarquia" asp-items="@docs" class="form-control"></select>

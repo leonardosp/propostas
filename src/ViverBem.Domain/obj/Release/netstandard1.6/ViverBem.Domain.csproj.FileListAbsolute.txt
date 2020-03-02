@@ -1,0 +1,23 @@
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Domain\bin\Release\netstandard1.6\ViverBem.Domain.deps.json
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Domain\bin\Release\netstandard1.6\ViverBem.Domain.dll
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Domain\bin\Release\netstandard1.6\ViverBem.Domain.pdb
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Domain\bin\Release\netstandard1.6\ViveBem.Domain.Core.dll
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Domain\bin\Release\netstandard1.6\ViveBem.Domain.Core.pdb
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Domain\obj\Release\netstandard1.6\ViverBem.Domain.csprojAssemblyReference.cache
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Domain\obj\Release\netstandard1.6\ViverBem.Domain.csproj.CoreCompileInputs.cache
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Domain\obj\Release\netstandard1.6\ViverBem.Domain.AssemblyInfoInputs.cache
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Domain\obj\Release\netstandard1.6\ViverBem.Domain.AssemblyInfo.cs
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Domain\obj\Release\netstandard1.6\ViverBem.Domain.csproj.CopyComplete
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Domain\obj\Release\netstandard1.6\ViverBem.Domain.dll
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Domain\obj\Release\netstandard1.6\ViverBem.Domain.pdb
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Domain\bin\Release\netstandard1.6\ViverBem.Domain.deps.json
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Domain\bin\Release\netstandard1.6\ViverBem.Domain.dll
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Domain\bin\Release\netstandard1.6\ViverBem.Domain.pdb
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Domain\bin\Release\netstandard1.6\ViveBem.Domain.Core.dll
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Domain\bin\Release\netstandard1.6\ViveBem.Domain.Core.pdb
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Domain\obj\Release\netstandard1.6\ViverBem.Domain.csprojAssemblyReference.cache
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Domain\obj\Release\netstandard1.6\ViverBem.Domain.AssemblyInfoInputs.cache
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Domain\obj\Release\netstandard1.6\ViverBem.Domain.AssemblyInfo.cs
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Domain\obj\Release\netstandard1.6\ViverBem.Domain.csproj.CopyComplete
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Domain\obj\Release\netstandard1.6\ViverBem.Domain.dll
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Domain\obj\Release\netstandard1.6\ViverBem.Domain.pdb

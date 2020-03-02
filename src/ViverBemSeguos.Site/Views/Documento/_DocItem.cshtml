@@ -1,0 +1,93 @@
+﻿@model ViverBem.Application.ViewModels.DocumentoConfiguracaoViewModel
+
+<form asp-action="IncluirDocumentoItem">
+    <div class="modal-body">
+        <div class="form-horizontal">
+            <vc:summary />
+
+            <div class="form-horizontal">
+                <input type="hidden" asp-for="DocumentoConfiguracaoItem.NrSeqDocumentoConfiguracao" />
+                <input type="hidden" asp-for="NrSeqDocumentoConfiguracao" />
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="col-sm-2">
+                                <label asp-for="DocumentoConfiguracaoItem.NoFonteColor" class="control-label"></label>
+                                <input asp-for="DocumentoConfiguracaoItem.NoFonteColor" class="form-control" />
+                                <span asp-validation-for="DocumentoConfiguracaoItem.NoFonteColor" class="text-danger"></span>
+                        </div>
+                        <div class="col-sm-4">
+                                <label asp-for="DocumentoConfiguracaoItem.NoFonte" class="control-label"></label>
+                                @Html.Partial("_TipoFonte")
+                                <span asp-validation-for="DocumentoConfiguracaoItem.NoFonte" class="text-danger"></span>
+                        </div>
+                        <div class="col-sm-4">
+                                <label asp-for="DocumentoConfiguracaoItem.NoTipoFonte" class="control-label"></label>
+                                @Html.Partial("_EstiloFonte")
+                                <span asp-validation-for="DocumentoConfiguracaoItem.NoTipoFonte" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+               <div class="row">
+                   <div class="col-sm-12">
+                       <div class="col-sm-4">
+                           <label asp-for="DocumentoConfiguracaoItem.NrFonteTamanho" class="control-label"></label>
+                           <input asp-for="DocumentoConfiguracaoItem.NrFonteTamanho" class="form-control" />
+                           <span asp-validation-for="DocumentoConfiguracaoItem.NrFonteTamanho" class="text-danger"></span>
+                       </div>
+
+                       <div class="col-sm-4">
+                           <label asp-for="DocumentoConfiguracaoItem.NrColuna" class="control-label"></label>
+                           <input asp-for="DocumentoConfiguracaoItem.NrColuna" class="form-control" />
+                           <span asp-validation-for="DocumentoConfiguracaoItem.NrColuna" class="text-danger"></span>
+
+                       </div>
+                       <div class="col-sm-4">
+                           <label asp-for="DocumentoConfiguracaoItem.FlgIdentificador" class="control-label"></label>
+                           <input asp-for="DocumentoConfiguracaoItem.FlgIdentificador" class="form-control" />
+                           <span asp-validation-for="DocumentoConfiguracaoItem.FlgIdentificador" class="text-danger"></span>
+                       </div>
+                       <div class="col-sm-4">
+                           <label asp-for="DocumentoConfiguracaoItem.FlgImage" class="control-label"></label>
+                           <input asp-for="DocumentoConfiguracaoItem.FlgImage" class="form-control" />
+                           <span asp-validation-for="DocumentoConfiguracaoItem.FlgImage" class="text-danger"></span>
+                       </div>
+                       <div class="col-sm-4">
+                           <label asp-for="DocumentoConfiguracaoItem.NrMaxImageWidth" class="control-label"></label>
+                           <input asp-for="DocumentoConfiguracaoItem.NrMaxImageWidth" class="form-control" />
+                           <span asp-validation-for="DocumentoConfiguracaoItem.NrMaxImageWidth" class="text-danger"></span>
+                       </div>
+                       <div class="col-sm-4">
+                           <label asp-for="DocumentoConfiguracaoItem.NrMaxImageHeight" class="control-label"></label>
+                           <input asp-for="DocumentoConfiguracaoItem.NrMaxImageHeight" class="form-control" />
+                           <span asp-validation-for="DocumentoConfiguracaoItem.NrMaxImageHeight" class="text-danger"></span>
+                       </div>
+                   </div>
+               </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="col-sm-3">
+                            <label asp-for="DocumentoConfiguracaoItem.FlgPropriedade" class="control-label"></label>
+                            <input asp-for="DocumentoConfiguracaoItem.FlgPropriedade" class="form-control" />
+                            <span asp-validation-for="DocumentoConfiguracaoItem.FlgPropriedade" class="text-danger"></span>
+                        </div>
+                        <div class="col-sm-8">
+                            <label asp-for="DocumentoConfiguracaoItem.NoFrase" class="control-label"></label>
+                            <input asp-for="DocumentoConfiguracaoItem.NoFrase" class="form-control" />
+                            <span asp-validation-for="DocumentoConfiguracaoItem.NoFrase" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Adicionar Item" class="btn btn-success" />
+                        <input type="submit" class="btn btn-info" value="Fechar" data-dismiss="modal" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+

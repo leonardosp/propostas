@@ -1,0 +1,27 @@
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.Data\bin\Release\netstandard2.0\ViverBem.Infra.Data.deps.json
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.Data\bin\Release\netstandard2.0\ViverBem.Infra.Data.dll
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.Data\bin\Release\netstandard2.0\ViverBem.Infra.Data.pdb
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.Data\bin\Release\netstandard2.0\ViveBem.Domain.Core.dll
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.Data\bin\Release\netstandard2.0\ViverBem.Domain.dll
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.Data\bin\Release\netstandard2.0\ViveBem.Domain.Core.pdb
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.Data\bin\Release\netstandard2.0\ViverBem.Domain.pdb
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.Data\obj\Release\netstandard2.0\ViverBem.Infra.Data.csprojAssemblyReference.cache
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.Data\obj\Release\netstandard2.0\ViverBem.Infra.Data.csproj.CoreCompileInputs.cache
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.Data\obj\Release\netstandard2.0\ViverBem.Infra.Data.AssemblyInfoInputs.cache
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.Data\obj\Release\netstandard2.0\ViverBem.Infra.Data.AssemblyInfo.cs
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.Data\obj\Release\netstandard2.0\ViverBem.Infra.Data.csproj.CopyComplete
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.Data\obj\Release\netstandard2.0\ViverBem.Infra.Data.dll
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.Data\obj\Release\netstandard2.0\ViverBem.Infra.Data.pdb
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Infra.Data\bin\Release\netstandard2.0\ViverBem.Infra.Data.deps.json
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Infra.Data\bin\Release\netstandard2.0\ViverBem.Infra.Data.dll
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Infra.Data\bin\Release\netstandard2.0\ViverBem.Infra.Data.pdb
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Infra.Data\bin\Release\netstandard2.0\ViveBem.Domain.Core.dll
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Infra.Data\bin\Release\netstandard2.0\ViverBem.Domain.dll
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Infra.Data\bin\Release\netstandard2.0\ViveBem.Domain.Core.pdb
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Infra.Data\bin\Release\netstandard2.0\ViverBem.Domain.pdb
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Infra.Data\obj\Release\netstandard2.0\ViverBem.Infra.Data.csprojAssemblyReference.cache
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Infra.Data\obj\Release\netstandard2.0\ViverBem.Infra.Data.AssemblyInfoInputs.cache
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Infra.Data\obj\Release\netstandard2.0\ViverBem.Infra.Data.AssemblyInfo.cs
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Infra.Data\obj\Release\netstandard2.0\ViverBem.Infra.Data.csproj.CopyComplete
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Infra.Data\obj\Release\netstandard2.0\ViverBem.Infra.Data.dll
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Infra.Data\obj\Release\netstandard2.0\ViverBem.Infra.Data.pdb

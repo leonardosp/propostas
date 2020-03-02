@@ -1,0 +1,23 @@
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Bus\bin\Release\netstandard2.0\ViverBem.Infra.CrossCutting.Bus.deps.json
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Bus\bin\Release\netstandard2.0\ViverBem.Infra.CrossCutting.Bus.dll
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Bus\bin\Release\netstandard2.0\ViverBem.Infra.CrossCutting.Bus.pdb
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Bus\bin\Release\netstandard2.0\ViveBem.Domain.Core.dll
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Bus\bin\Release\netstandard2.0\ViveBem.Domain.Core.pdb
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Bus\obj\Release\netstandard2.0\ViverBem.Infra.CrossCutting.Bus.csprojAssemblyReference.cache
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Bus\obj\Release\netstandard2.0\ViverBem.Infra.CrossCutting.Bus.csproj.CoreCompileInputs.cache
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Bus\obj\Release\netstandard2.0\ViverBem.Infra.CrossCutting.Bus.AssemblyInfoInputs.cache
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Bus\obj\Release\netstandard2.0\ViverBem.Infra.CrossCutting.Bus.AssemblyInfo.cs
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Bus\obj\Release\netstandard2.0\ViverBem.Infra.CrossCutting.Bus.csproj.CopyComplete
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Bus\obj\Release\netstandard2.0\ViverBem.Infra.CrossCutting.Bus.dll
+C:\Users\leonardo.paulino\Documents\Visual Studio 2017\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Bus\obj\Release\netstandard2.0\ViverBem.Infra.CrossCutting.Bus.pdb
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Bus\bin\Release\netstandard2.0\ViverBem.Infra.CrossCutting.Bus.deps.json
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Bus\bin\Release\netstandard2.0\ViverBem.Infra.CrossCutting.Bus.dll
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Bus\bin\Release\netstandard2.0\ViverBem.Infra.CrossCutting.Bus.pdb
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Bus\bin\Release\netstandard2.0\ViveBem.Domain.Core.dll
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Bus\bin\Release\netstandard2.0\ViveBem.Domain.Core.pdb
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Bus\obj\Release\netstandard2.0\ViverBem.Infra.CrossCutting.Bus.csprojAssemblyReference.cache
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Bus\obj\Release\netstandard2.0\ViverBem.Infra.CrossCutting.Bus.AssemblyInfoInputs.cache
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Bus\obj\Release\netstandard2.0\ViverBem.Infra.CrossCutting.Bus.AssemblyInfo.cs
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Bus\obj\Release\netstandard2.0\ViverBem.Infra.CrossCutting.Bus.csproj.CopyComplete
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Bus\obj\Release\netstandard2.0\ViverBem.Infra.CrossCutting.Bus.dll
+D:\Arquivo\CORE\CORE\Projects\ViverBemSeguros\src\ViverBem.Infra.CrossCutting.Bus\obj\Release\netstandard2.0\ViverBem.Infra.CrossCutting.Bus.pdb

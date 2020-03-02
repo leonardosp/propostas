@@ -1,0 +1,8 @@
+﻿@using ViverBem.Application.ViewModels
+@model DocumentoConfiguracaoViewModel
+
+@{ 
+    var alinhamentos = (IEnumerable<SelectListItem>)new DocumentoConfiguracaoViewModel().Alinhamento();
+}
+
+<select asp-for="NoHorizontalAligment" asp-items="@alinhamentos" class="form-control"></select>

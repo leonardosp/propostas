@@ -1,0 +1,8 @@
+﻿@using ViverBem.Application.ViewModels
+@model ClienteViewModel
+
+@{
+    var parentesco = (IEnumerable<SelectListItem>)new ClienteViewModel().GrauParentesco();
+}
+
+<select asp-for="Dependente.Parentesco" asp-items="@parentesco" class="form-control"></select>

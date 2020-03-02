@@ -1,0 +1,75 @@
+﻿@model IEnumerable<ViverBem.Application.ViewModels.ClienteViewModel>
+
+@{
+    ViewData["Title"] = "Lista dos Clientes";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<td>
+    <a asp-action="VerificaCPF" class="btn btn-danger"><span class="glyphicon glyphicon-arrow-right"></span> Novo Cliente</a>
+</td>
+<td>
+    <a asp-action="ImportaCliente" class="btn btn-warning"><span class="glyphicon-level-up"></span> Importar Clientes</a>
+</td>
+<td>
+    <a asp-action="ImportaDependentes" class="btn btn-warning"><span class="glyphicon-arrow-up"></span> Importar Dependentes</a>
+</td>
+<td>
+    <a asp-action="ImportaClienteDep" class="btn btn-danger"><span class="glyphicon-align-right"></span> Importar Clientes e Dependentes</a>
+</td>
+<br />
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CPF)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RG)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataExpedicao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataNasc)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CPF)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RG)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @item.DataExpedicao.ToString("d")
+            </td>
+            <td>
+                @item.DataNasc.ToString("d")
+            </td>
+
+            <td>
+                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-success"><span class="glyphicon glyphicon-search"></span> Ver Detalhes</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

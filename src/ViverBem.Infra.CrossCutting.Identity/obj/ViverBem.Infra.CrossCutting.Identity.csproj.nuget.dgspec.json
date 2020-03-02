@@ -1,0 +1,303 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Arquivo\\CORE\\CORE\\Projects\\ViverBemSeguros\\src\\ViverBem.Infra.CrossCutting.Identity\\ViverBem.Infra.CrossCutting.Identity.csproj": {}
+  },
+  "projects": {
+    "D:\\Arquivo\\CORE\\CORE\\Projects\\ViverBemSeguros\\src\\ViveBem.Domain.Core\\ViveBem.Domain.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Arquivo\\CORE\\CORE\\Projects\\ViverBemSeguros\\src\\ViveBem.Domain.Core\\ViveBem.Domain.Core.csproj",
+        "projectName": "ViveBem.Domain.Core",
+        "projectPath": "D:\\Arquivo\\CORE\\CORE\\Projects\\ViverBemSeguros\\src\\ViveBem.Domain.Core\\ViveBem.Domain.Core.csproj",
+        "packagesPath": "C:\\Users\\leonardo.paulino\\.nuget\\packages\\",
+        "outputPath": "D:\\Arquivo\\CORE\\CORE\\Projects\\ViverBemSeguros\\src\\ViveBem.Domain.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\leonardo.paulino\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard1.6"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard1.6": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard1.6": {
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[8.1.3, )"
+            },
+            "NETStandard.Library": {
+              "target": "Package",
+              "version": "[1.6.1, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Arquivo\\CORE\\CORE\\Projects\\ViverBemSeguros\\src\\ViverBem.Application\\ViverBem.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Arquivo\\CORE\\CORE\\Projects\\ViverBemSeguros\\src\\ViverBem.Application\\ViverBem.Application.csproj",
+        "projectName": "ViverBem.Application",
+        "projectPath": "D:\\Arquivo\\CORE\\CORE\\Projects\\ViverBemSeguros\\src\\ViverBem.Application\\ViverBem.Application.csproj",
+        "packagesPath": "C:\\Users\\leonardo.paulino\\.nuget\\packages\\",
+        "outputPath": "D:\\Arquivo\\CORE\\CORE\\Projects\\ViverBemSeguros\\src\\ViverBem.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\leonardo.paulino\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "D:\\Arquivo\\CORE\\CORE\\Projects\\ViverBemSeguros\\src\\ViverBem.Domain\\ViverBem.Domain.csproj": {
+                "projectPath": "D:\\Arquivo\\CORE\\CORE\\Projects\\ViverBemSeguros\\src\\ViverBem.Domain\\ViverBem.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Microsoft.AspNet.WebApi.Client": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
+            "Microsoft.AspNetCore.Mvc.ViewFeatures": {
+              "target": "Package",
+              "version": "[1.1.7, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Arquivo\\CORE\\CORE\\Projects\\ViverBemSeguros\\src\\ViverBem.Domain\\ViverBem.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Arquivo\\CORE\\CORE\\Projects\\ViverBemSeguros\\src\\ViverBem.Domain\\ViverBem.Domain.csproj",
+        "projectName": "ViverBem.Domain",
+        "projectPath": "D:\\Arquivo\\CORE\\CORE\\Projects\\ViverBemSeguros\\src\\ViverBem.Domain\\ViverBem.Domain.csproj",
+        "packagesPath": "C:\\Users\\leonardo.paulino\\.nuget\\packages\\",
+        "outputPath": "D:\\Arquivo\\CORE\\CORE\\Projects\\ViverBemSeguros\\src\\ViverBem.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\leonardo.paulino\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard1.6"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard1.6": {
+            "projectReferences": {
+              "D:\\Arquivo\\CORE\\CORE\\Projects\\ViverBemSeguros\\src\\ViveBem.Domain.Core\\ViveBem.Domain.Core.csproj": {
+                "projectPath": "D:\\Arquivo\\CORE\\CORE\\Projects\\ViverBemSeguros\\src\\ViveBem.Domain.Core\\ViveBem.Domain.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard1.6": {
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[8.1.3, )"
+            },
+            "NETStandard.Library": {
+              "target": "Package",
+              "version": "[1.6.1, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "System.Security.Claims": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Arquivo\\CORE\\CORE\\Projects\\ViverBemSeguros\\src\\ViverBem.Infra.CrossCutting.Identity\\ViverBem.Infra.CrossCutting.Identity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Arquivo\\CORE\\CORE\\Projects\\ViverBemSeguros\\src\\ViverBem.Infra.CrossCutting.Identity\\ViverBem.Infra.CrossCutting.Identity.csproj",
+        "projectName": "ViverBem.Infra.CrossCutting.Identity",
+        "projectPath": "D:\\Arquivo\\CORE\\CORE\\Projects\\ViverBemSeguros\\src\\ViverBem.Infra.CrossCutting.Identity\\ViverBem.Infra.CrossCutting.Identity.csproj",
+        "packagesPath": "C:\\Users\\leonardo.paulino\\.nuget\\packages\\",
+        "outputPath": "D:\\Arquivo\\CORE\\CORE\\Projects\\ViverBemSeguros\\src\\ViverBem.Infra.CrossCutting.Identity\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\leonardo.paulino\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "D:\\Arquivo\\CORE\\CORE\\Projects\\ViverBemSeguros\\src\\ViverBem.Application\\ViverBem.Application.csproj": {
+                "projectPath": "D:\\Arquivo\\CORE\\CORE\\Projects\\ViverBemSeguros\\src\\ViverBem.Application\\ViverBem.Application.csproj"
+              },
+              "D:\\Arquivo\\CORE\\CORE\\Projects\\ViverBemSeguros\\src\\ViverBem.Domain\\ViverBem.Domain.csproj": {
+                "projectPath": "D:\\Arquivo\\CORE\\CORE\\Projects\\ViverBemSeguros\\src\\ViverBem.Domain\\ViverBem.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Authorization": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.ViewFeatures": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

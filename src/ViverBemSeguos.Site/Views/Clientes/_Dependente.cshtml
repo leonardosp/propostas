@@ -1,0 +1,39 @@
+﻿@model ViverBem.Application.ViewModels.ClienteViewModel
+
+<form asp-action="IncluirDependente">
+    <div class="modal-body">
+        <div class="form-horizontal">
+            <vc:summary />
+
+            <div class="form-horizontal">
+                <input type="hidden" asp-for="Dependente.ClienteId" />
+                <input type="hidden" asp-for="Id" />
+
+                <div class="form-group">
+                    <label asp-for="Dependente.Nome" class="control-label"></label>
+                    <input asp-for="Dependente.Nome" class="form-control" />
+                    <span asp-validation-for="Dependente.Nome" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Dependente.Parentesco" class="control-label"></label>
+                    @Html.Partial("_Parentesco")
+                    <span asp-validation-for="Dependente.Parentesco" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Dependente.Participacao" class="control-label"></label>
+                    <input asp-for="Dependente.Participacao" class="form-control" />
+                    <span asp-validation-for="Dependente.Participacao" class="text-danger"></span>
+                </div>
+                <div class="modal-footer">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Adicionar Dependente" class="btn btn-success" />
+                        <input type="submit" class="btn btn-info" value="Fechar" data-dismiss="modal" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+

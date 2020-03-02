@@ -1,0 +1,77 @@
+﻿@model ViverBem.Application.ViewModels.ComboPrincViewModel
+
+@{
+    ViewData["Title"] = "Edição";
+}
+
+<h1>Edit</h1>
+
+<link href="~/js/bootstrap-datepicker.min.js" rel="stylesheet" />
+
+<h4>Cliente</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <vc:summary />
+
+            <input type="hidden" asp-for="comboPrincId" />
+            <div class="form-group">
+                <label asp-for="CodCombo" class="control-label"></label>
+                <input asp-for="CodCombo" class="form-control" />
+                <span asp-validation-for="CodCombo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Corretor" class="control-label"></label>
+                <input asp-for="Corretor" class="form-control" />
+                <span asp-validation-for="Corretor" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Atualizar Combo" class="btn btn-success" />
+                    <a asp-action="Index" class="btn btn-info">Voltar para Lista</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+        AjaxModal();
+    </script>
+    <script src="~/js/bootstrap-datepicker.min.js"></script>
+    <script src="~/js/bootstrap-datepicker.pt-BR.min.js"></script>
+    <script src="~/js/bootstrap-datepicker.pt.min.js"></script>
+
+    @{
+        if (ViewBag.RetornoPost != null)
+        {
+            var notificacao = ViewBag.RetornoPost.ToString().Split(',');
+
+            <script>
+                toastr.options = {
+                    "closebutton": false,
+                    "debug": true,
+                    "newestOnTop": false,
+                    "progressBar": true,
+                    "positionClass": "toast-top-right",
+                    "preventDuplicates": true,
+                    "onclick": null,
+                    "showDuration": "300",
+                    "hideDuration": "1000",
+                    "timeOut": "5000",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
+                }
+                toastr["@notificacao[0]"("@notificacao[1]");
+            </script>
+        }
+    }
+}

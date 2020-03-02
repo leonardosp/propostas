@@ -1,0 +1,37 @@
+﻿@using ViverBem.Domain.Interfaces
+@inject IUser user
+@model IEnumerable<ViverBem.Application.ViewModels.PropostasViewModel>
+
+@{
+    ViewData["Title"] = "Propostas Aprovadas";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+
+<br />
+<form asp-action="GerarExcel" method="get">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="col-sm-6">
+                <div class="col-sm-10">
+                    <p>De: <input type="date" name="Inicio" value="@ViewData["currentFilter"]" /> Até: <input type="date" name="Fim" value="@ViewData["currentFilter"]" />  </p>
+                </div>
+            </div>
+            <div class="col-sm-10">
+                <fieldset id="group1">
+                    <input type="radio" value="Todas" name="group1" />Relatorio de Todas Propostas
+                    <input type="radio" value="Aprovadas" name="group1" />Relatorio Propostas Aprovadas 
+                    <input type="radio" value="Recusadas" name="group1" />Relatorio Propostas Recusadas <input type="submit" value="Filtrar" class="btn btn-primary" />
+                </fieldset>          
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-10">
+            <div class="col-sm-4">
+                
+            </div>
+        </div>
+    </div>
+</form>
